@@ -67,13 +67,9 @@
   </div>
 </header>
 <!-- seccion que contiene el fondo y el formulario -->
-<section id="fondo">
-  <div class="container-fluid" id="formulario">
-    <div class="row" >
-      <div class="col-md-11">
-        <h3>¡Regístrate!</h3>
-      </div>
-    </div>
+<section>
+  <div class="container-fluid fondo">
+
     <div class="row">
       <div class="col-md-11">
         <input type="text" name="name" class="form-control" id="nombre" placeholder="Nombre y Apellido">
@@ -90,6 +86,15 @@
     <div class="row">
       <div class="col-md-6">
         <button type="button" id="btn" class="btn btn-success">Crear cuenta</button>
+        <div id="formulario"><h3>¡Regístrate!</h3>
+        </div>
+        <input type="text" name="correo" class="form-control" placeholder="Correo electrónico">
+        <input type="text" name="contraseña" class="form-control" placeholder="Contraseña">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3 offset-xs-9 col-sm-4">
+        <button type="button" class="btn btn-success">Crear cuenta</button>
       </div>
     </div>
   </div>

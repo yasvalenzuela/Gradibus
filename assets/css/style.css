@@ -60,7 +60,7 @@
 }
 
 /*section que contiene la imagen de fondo*/
-#fondo {
+.fondo {
   background-image: url(../images/fondo.jpeg);
   background-size: cover;
   height: 83vh;
@@ -70,11 +70,11 @@
 /*estilo del div que contiene el formulario*/
 #formulario {
   background-color: #ffffff;
-  width: 60vh;
-  margin-left: 55%;
+  width: 58vh;
   border: 1px solid #A2CB89;
   border-radius: 4%;
   margin-top: 19%;
+  text-align: center;
 }
 
 /*estilo de titulo de formulario*/
@@ -89,32 +89,12 @@
   margin-left: 4%;
 }
 
-/*estilo primer label del formulario*/
-#primerLabel {
-  margin-top: 5%;
-}
-
-/*estilo del span del primer label*/
-#hombre {
-  margin-left: 40%;
-}
-
-/*estilo segundo label*/
-#segundoLabel {
-  margin-top: 6%;
-}
-
-/*estilo del span del segundo label*/
-#mujer {
-  margin-left: 50%;
-}
-
 /*estilos del boton crear cuenta*/
 .btn {
-  margin-left: 75%;
+  /*margin-left: 75%;
   margin-top: 7%;
-  margin-bottom: 10%;
-  font-family: 'Montserrat', sans-serif;;
+  margin-bottom: 10%;*/
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*segunda pantalla*/
@@ -126,3 +106,4 @@
   height: 10vh;
   width: 100%;
 }
+
