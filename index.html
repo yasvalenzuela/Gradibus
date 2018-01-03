@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GradiBus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- primera pantalla -->
+<!-- seccion header -->
+<header id="primerHeader">
+  <div class="container-fluid">
+    <ul>
+      <li>¿Tienes Cuenta?</li>
+      <li id="segundoPunto">Inicia Sesión</li>
+      <li><span id="iconoUno" class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></li>
+    </ul>
+  </div>
+
+  <!-- formulario desplegable oculto -->
+  <div class="container" id="containerIcono">
+    <div class="row">
+      <div class="col-md-1">
+        <i><span id="iconoDos" class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></i>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" id="formularioOculto">
+    <div class="row">
+      <div class="col-md-11">
+        <h5>¿Tienes cuenta?</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-11">
+        <input type="email" name="correo" id="correo" class="form-control" placeholder="Correo electrónico">
+        <input type="text" name="contraseña" id="contraseña" class="form-control" placeholder="Contraseña">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-11">
+        <input type="checkbox" value=""><span>Recordar mis datos. <a href="">¿Olvidaste tu contraseña?</a></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <button type="button" id="btnOculto" class="btn btn-success">Iniciar Sesión</button>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- seccion que contiene el fondo y el formulario -->
+<section id="fondo">
+  <div class="container-fluid" id="formulario">
+    <div class="row" >
+      <div class="col-md-11">
+        <h3>¡Regístrate!</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-11">
+        <input type="text" name="name" class="form-control" id="exampleInput1" placeholder="Nombre y Apellido">
+        <input type="text" name="correo" class="form-control" placeholder="Correo electrónico">
+        <input type="text" name="contraseña" class="form-control" placeholder="Contraseña">
+        <label class="radio-inline" id="primerLabel">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"><span id="hombre">Hombre</span>
+        </label>
+        <label class="radio-inline" id="segundoLabel">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"><span id="mujer">Mujer</span>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <button type="button" class="btn btn-success">Crear cuenta</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
