@@ -7,6 +7,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:400,500,600,700,800,900" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCH63r8aIIhVnkMartgMMhmStfUYwNyQYQ",
+    authDomain: "gradibus-f20a6.firebaseapp.com",
+    databaseURL: "https://gradibus-f20a6.firebaseio.com",
+    projectId: "gradibus-f20a6",
+    storageBucket: "gradibus-f20a6.appspot.com",
+    messagingSenderId: "805999349197"
+  };
+  firebase.initializeApp(config);
+</script>
 </head>
 <body>
 <!-- primera pantalla -->
@@ -62,9 +76,9 @@
     </div>
     <div class="row">
       <div class="col-md-11">
-        <input type="text" name="name" class="form-control" id="exampleInput1" placeholder="Nombre y Apellido">
-        <input type="text" name="correo" class="form-control" placeholder="Correo electrónico">
-        <input type="text" name="contraseña" class="form-control" placeholder="Contraseña">
+        <input type="text" name="name" class="form-control" id="nombre" placeholder="Nombre y Apellido">
+        <input type="text" name="correo" class="form-control" id="correo" placeholder="Correo electrónico">
+        <input type="text" name="contraseña" class="form-control" id="contraseña" placeholder="Contraseña">
         <label class="radio-inline" id="primerLabel">
           <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"><span id="hombre">Hombre</span>
         </label>
@@ -75,11 +89,27 @@
     </div>
     <div class="row">
       <div class="col-md-6">
-        <button type="button" class="btn btn-success">Crear cuenta</button>
+        <button type="button" id="btn" class="btn btn-success">Crear cuenta</button>
       </div>
     </div>
   </div>
 </section>
+
+<!-- segunda pantalla -->
+<header id="segundoHeader">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <ul>
+          <li>logo</li>
+          <li><input type="text" class="form-control" placeholder="Search"><span id="lupa" class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
+          <li>perfil</li>
+          <li><span id="notificacion" class="glyphicon glyphicon-globe" aria-hidden="true"></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
 
 
 

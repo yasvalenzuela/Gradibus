@@ -117,3 +117,13 @@
   margin-bottom: 10%;
   font-family: 'Montserrat', sans-serif;;
 }
+
+/*segunda pantalla*/
+/*header*/
+#segundoHeader {
+  position: fixed;
+  background-color: #8DC433;
+  background-size: cover;
+  height: 10vh;
+  width: 100%;
+}
