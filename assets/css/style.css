@@ -304,3 +304,24 @@
 
 
 
+
+
+/*Actividades manualidades de reciclaje*/
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding:left;
+    margin:10px 30px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.carousel-inner>.item>iframe,.carousel-inner>.item>a>iframe {
+    width: 50%;
+}
+
