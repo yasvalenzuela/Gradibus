@@ -20,8 +20,7 @@ registrar.addEventListener('click', function(){
   console.log(contrasena);
 })
 
-
-
+/*sección slider*/
 
 
 

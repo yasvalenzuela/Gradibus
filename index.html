@@ -25,50 +25,102 @@
     storageBucket: "gradibus-f20a6.appspot.com",
     messagingSenderId: "805999349197"
   };
-  firebase.initializeApp(config);
-</script>
-</head>
-<body>
-<!-- primera pantalla -->
-<!-- seccion header -->
-<header id="primerHeader">
-  <div class="container-fluid">
-    <ul>
-      <li>¿Tienes Cuenta?</li>
-      <li id="segundoPunto">Inicia Sesión</li>
-      <li><span id="iconoUno" class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></li>
-    </ul>
-  </div>
+    firebase.initializeApp(config);
+  </script>
+    </head>
+    <body>
+    <!-- primera pantalla -->
+    <!-- seccion header -->
+    <header id="primerHeader">
+      <div class="container-fluid">
+        <ul>
+          <li>¿Tienes Cuenta?</li>
+          <li id="segundoPunto">Inicia Sesión</li>
+          <li><span id="iconoUno" class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></li>
+        </ul>
+      </div>
 
-  <!-- formulario desplegable oculto -->
-  <div class="container" id="containerIcono">
-    <div class="row">
-      <div class="col-md-1">
-        <i><span id="iconoDos" class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></i>
+      <!-- formulario desplegable oculto -->
+      <div class="container" id="containerIcono">
+        <div class="row">
+          <div class="col-md-1">
+            <i><span id="iconoDos" class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></i>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="container-fluid" id="formularioOculto">
-    <div class="row">
-      <div class="col-md-11">
-        <h5>¿Tienes cuenta?</h5>
+      <div class="container-fluid" id="formularioOculto">
+        <div class="row">
+          <div class="col-md-11">
+            <h5>¿Tienes cuenta?</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-11">
+            <input type="email" name="correo" id="correo" class="form-control" placeholder="Correo electrónico">
+            <input type="text" name="contraseña" id="contraseña" class="form-control" placeholder="Contraseña">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-11">
+            <input type="checkbox" value=""><span>Recordar mis datos. <a href="">¿Olvidaste tu contraseña?</a></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <button type="button" id="btnOculto" class="btn btn-success">Iniciar Sesión</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-11">
-        <input type="email" name="correo" id="correo" class="form-control" placeholder="Correo electrónico">
-        <input type="text" name="contraseña" id="contraseña" class="form-control" placeholder="Contraseña">
+    </header>
+    <!-- seccion que contiene el fondo y el formulario -->
+    <section>
+      <div class="container-fluid fondo">
+
+        <div class="row">
+          <div class="col-md-11">
+            <input type="text" name="name" class="form-control" id="nombre" placeholder="Nombre y Apellido">
+            <input type="text" name="correo" class="form-control" id="correo" placeholder="Correo electrónico">
+            <input type="text" name="contraseña" class="form-control" id="contraseña" placeholder="Contraseña">
+            <label class="radio-inline" id="primerLabel">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"><span id="hombre">Hombre</span>
+            </label>
+            <label class="radio-inline" id="segundoLabel">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"><span id="mujer">Mujer</span>
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <button type="button" id="btn" class="btn btn-success">Crear cuenta</button>
+            <div id="formulario"><h3>¡Regístrate!</h3>
+            </div>
+            <input type="text" name="correo" class="form-control" placeholder="Correo electrónico">
+            <input type="text" name="contraseña" class="form-control" placeholder="Contraseña">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 offset-xs-9 col-sm-4">
+            <button type="button" class="btn btn-success">Crear cuenta</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-11">
-        <input type="checkbox" value=""><span>Recordar mis datos. <a href="">¿Olvidaste tu contraseña?</a></span>
+    </section>
+
+    <!-- segunda pantalla -->
+    <header id="segundoHeader">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <ul>
+              <li>logo</li>
+              <li><input type="text" class="form-control" placeholder="Search"><span id="lupa" class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
+              <li>perfil</li>
+              <li><span id="notificacion" class="glyphicon glyphicon-globe" aria-hidden="true"></span></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <button type="button" id="btnOculto" class="btn btn-success">Iniciar Sesión</button>
-      </div>
+
     </div>
   </div>
 </header>
@@ -91,33 +143,101 @@
         <div class="col-md-6">
           <button type="button" id="btn" class="btn btn-success">Crear cuenta</button>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+        </div>
+    </section>
 
-<!-- segunda pantalla -->
-<header id="segundoHeader">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <ul>
-          <li>logo</li>
-          <li><input type="text" class="form-control" placeholder="Search"><span id="lupa" class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
-          <li>perfil</li>
-          <li><span id="notificacion" class="glyphicon glyphicon-globe" aria-hidden="true"></span></li>
-        </ul>
+    <!-- segunda pantalla-->
+        <!--sección actividades ambientales (manualidades con reciclaje)-->
+        <section>
+        <div class="container pull-left">
+        <div class="col-md-4" >
+        <div id="carousel-1" class="carousel slide" data-ride="carousel">
+        <!--indicadores-->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-1" data-slide-to="1"></li>
+          <li data-target="#carousel-1" data-slide-to="2"></li>
+          <li data-target="#carousel-1" data-slide-to="3"></li>
+          <li data-target="#carousel-1" data-slide-to="4"></li>
+        </ol>
+        <!--contenedor de los slider-->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+          <iframe width="350" height="150" src="https://www.youtube.com/embed/ATgCPFON78M" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+          <div class="carousel-caption">
+          <h3>Manualidades Botellas Pet</h3>
+          </div>
+          </div>
+          <div class="item">
+          <iframe width="350" height="150" src="https://www.youtube.com/embed/0SuOXNUc8cw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+          <div class="carousel-caption">
+          <h3>Manualidades con Papel</h3>
       </div>
-    </div>
-  </div>
-</header>
+      </div>
+      <div class="item">
+        <iframe width="350" height="150" src="https://www.youtube.com/embed/OzR8fbROb60" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <div class="carousel-caption">
+      <h3>Manualidades con Cajas de Leche</h3>
 
+      </div>
+      </div>
+      <div class="item">
+        <iframe width="350" height="150" src="https://www.youtube.com/embed/dZP6jZOnoI8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+      <div class="carousel-caption">
+      <h3>Manualidades con Tetrapack y Cartón</h3>
+      </div>
+      </div>
+      <div class="item">
+        <iframe width="350" height="150" src="https://www.youtube.com/embed/M5O6fyJoMY4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+      <div class="descripción">
+      <h3>Maneras Fácil de Reciclar tu Ropa Vieja</h3>
+      </div>
+      </div>
+      </div>
+      <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+        </div>
+      </div>
+        </div>
+      </section>
+      <!--Contenido Ambiental-->
+      <aside class="col-md-3 hidden-xs hidde-sm">
+      <h4>Categorias</h4>
+      <div class="list-group">
+        <a href="#" class="list-group-item active">Actividades Ambientales</a>
+        <a href="#" class="list-group-item">Feria Verde</a>
+        <a href="#" class="list-group-item">Manualidades con Matrial Reciclable</a>
+        <a href="#" class="list-group-item">Calcula Tú Huella de CO2</a>
+        </div>
+        <h4>Temas del Día</h4>
+        <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">Agencia de Cambio Climático define líneas de acción para los próximos años</h4>
+        <p>Luego de siete meses de trabajo y varias reuniones, un Comité Asesor convocado por la Agencia de Sustentabilidad y Cambio Climático, ASCC (creada en enero de 2017) elaboró un ‘borrador final’ acerca de dónde deberían estar los focos de esta entidad nacida producto del Acuerdo de París, el cual será presentado oficialmente el 15 de enero.</p>
+        </a>
+        <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">2018 sin bolsas: comenzó a regir acuerdo con supermercados</h4>
+        <p>Cabe recordar que fue Pucón la ciudad que debutó con esta regulación en 2013, seguida por comunas australes como Puerto Williams, Punta Arenas y Puerto Natales, las que prohibieron el uso de estos recipientes debido al pernicioso impacto medioambiental que generaban.</p>
+        </a>
+        <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">Hacia una economía saludable</h4>
+        <p>La crisis ecológica revela, ante todo, el callejón sin salida político, cultural, filosófico y espiritual en el que ha caído nuestra civilización. La guerra que libran nuestras sociedades ‘modernas’ contra la Tierra es el reflejo de la guerra que libran los países ricos contra su conciencia.</p>
+        </a>
+      </aside>
 
 
 
   <!-- scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   </script>
+
+  <script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
