@@ -1,0 +1,77 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>GradiBus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCH63r8aIIhVnkMartgMMhmStfUYwNyQYQ",
+      authDomain: "gradibus-f20a6.firebaseapp.com",
+      databaseURL: "https://gradibus-f20a6.firebaseio.com",
+      projectId: "gradibus-f20a6",
+      storageBucket: "gradibus-f20a6.appspot.com",
+      messagingSenderId: "805999349197"
+    };
+      firebase.initializeApp(config);
+    </script>
+      </head>
+      <body>
+      
+          <!--sección actividades ambientales (manualidades con reciclaje)-->
+          <section>
+          <!--contenedor de los slider-->
+          <div id="container">
+          <div class="row">
+              <div class="col-sm-6" id="slider-thumbs">
+                  <ul class="hide-bullets">
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-0">
+                              <iframe width="300" height="115" src="https://www.youtube.com/embed/ATgCPFON78M" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></a>
+                              </li>
+                              <li class="col-sm-3">
+                              <a class="thumbnail" id="carousel-selector-1">
+                            <iframe width="300" height="115" src="https://www.youtube.com/embed/0SuOXNUc8cw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></a>
+                            </li>
+                            <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-2">
+                          <iframe width="300" height="115" src="https://www.youtube.com/embed/OzR8fbROb60" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></a>
+                      </li>
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-3">
+                          <iframe width="300" height="115" src="https://www.youtube.com/embed/dZP6jZOnoI8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></a>
+                      </li>
+
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-4">
+                          <iframe width="300" height="115" src="https://www.youtube.com/embed/M5O6fyJoMY4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                           </a>
+                      </li>
+                      </ul>
+                      </div>
+                      </div>
+                      </div>
+                      </section>
+
+       
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </script>
+
+  <script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
