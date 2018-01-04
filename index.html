@@ -8,7 +8,13 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:400,500,600,700,800,900" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+
 <script>
   // Initialize Firebase
   var config = {
@@ -69,32 +75,22 @@
 <!-- seccion que contiene el fondo y el formulario -->
 <section>
   <div class="container-fluid fondo">
-
-    <div class="row">
-      <div class="col-md-11">
-        <input type="text" name="name" class="form-control" id="nombre" placeholder="Nombre y Apellido">
-        <input type="text" name="correo" class="form-control" id="correo" placeholder="Correo electrónico">
-        <input type="text" name="contraseña" class="form-control" id="contraseña" placeholder="Contraseña">
-        <label class="radio-inline" id="primerLabel">
-          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"><span id="hombre">Hombre</span>
-        </label>
-        <label class="radio-inline" id="segundoLabel">
-          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"><span id="mujer">Mujer</span>
-        </label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <button type="button" id="btn" class="btn btn-success">Crear cuenta</button>
-        <div id="formulario"><h3>¡Regístrate!</h3>
+    <div class="container" id="formulario">
+      <div class="row">
+        <div class="col-md-11">
+          <h3>¡Regístrate!</h3>
         </div>
-        <input type="text" name="correo" class="form-control" placeholder="Correo electrónico">
-        <input type="text" name="contraseña" class="form-control" placeholder="Contraseña">
       </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-3 offset-xs-9 col-sm-4">
-        <button type="button" class="btn btn-success">Crear cuenta</button>
+      <div class="row">
+        <div class="col-md-11">
+          <input type="text" name="correo" class="form-control" id="email" placeholder="Correo electrónico">
+          <input type="password" name="password" class="form-control" id="password" placeholder="Contraseña">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <button type="button" id="btn" class="btn btn-success">Crear cuenta</button>
+        </div>
       </div>
     </div>
   </div>
@@ -119,39 +115,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!-- scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://use.fontawesome.com"></script>
+  </script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
