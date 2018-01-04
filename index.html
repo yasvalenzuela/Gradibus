@@ -8,12 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:400,500,600,700,800,900" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 
-<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-
-
-<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
 <script>
   // Initialize Firebase
@@ -34,11 +29,11 @@
   <div class="container-fluid">
     <div class="row">
       <div class ="col-xs-6 col-sm-6" class="logo1">
-        <img src="assets/images/logo1.jpg" class="logo1">   
+        <img src="assets/images/logo1.jpg" class="logo2">
       </div>
       <div class="col-xs-6 col-md-6 col-lg-6">
         <ul class="varios">
-          <li><p>Inicia Sesión</p><span id="iconoUno" class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></li>
+          <li id="segundoPunto"><p>Inicia Sesión</p><span id="iconoUno" class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></li>
         </ul>
       </div>
     </div>
@@ -76,11 +71,11 @@
   </div>
 </header>
 <!-- seccion que contiene el fondo y el formulario -->
-<section>
+<section id="seccion">
   <div class="container-fluid fondo">
     <div class="row cuadrado" id="formulario">
-      <div class="col-xs-11 col-md-4 col-lg-4">
-        <div id="formulario">
+      <div class="col-xs-11 col-md-11 col-lg-11">
+        <div >
           <h3>¡Regístrate!</h3>
         </div>
       </div>
@@ -99,9 +94,88 @@
   </div>
 </section>
 
-    <!-- segunda pantalla-->
+
+<!-- segunda pantalla-->
+<header id="segundoHeader">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-2 col-md-2 col-lg-2">
+      <!-- imagen -->
+      </div>
+      <div class="col-xs-4 col-md-4 col-lg-4">
+        <input type="text" name="correo" class="form-control" placeholder="buscador">
+      <div class="col-md-12">
+        <ul>
+          <li>logo</li>
+          <li id="search"><input type="text" class="form-control" placeholder="Search"><span id="lupa" class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
+          <li id="perfil">perfil</li>
+          <li id="notificacion" ><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--  
+<section id='seccionDos'>
+  <div class="container-fluid pantalla2">
+    <div class="item">
+      <iframe width="350" height="150" src="https://www.youtube.com/embed/dZP6jZOnoI8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+      <div class="carousel-caption">
+        <h3>Manualidades con Tetrapack y Cartón</h3>
+      </div>
+    </div>
+    <div class="item">
+      <iframe width="350" height="150" src="https://www.youtube.com/embed/M5O6fyJoMY4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+      <div class="descripción">
+        <h3>Maneras Fácil de Reciclar tu Ropa Vieja</h3>
+      </div>
+    </div>
+    <div>
+      <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span></a>
+
+      <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </div>
+</section>
+-->
+      <!--Contenido Ambiental-->
+<section id="seccionTres">
+  <div>
+    <aside class="col-md-3 hidden-xs hidden-sm">
+      <h4>Categorias</h4>
+      <div class="list-group">
+        <a href="#" class="list-group-item active">Actividades Ambientales</a>
+        <a href="#" class="list-group-item">Feria Verde</a>
+        <a href="#" class="list-group-item">Manualidades con Matrial Reciclable</a>
+        <a href="#" class="list-group-item">Calcula Tú Huella de CO2</a>
+      </div>
+      <div>
+        <h4>Temas del Día</h4>
+        <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">Agencia de Cambio Climático define líneas de acción para los próximos años</h4>
+        <p>Luego de siete meses de trabajo y varias reuniones, un Comité Asesor convocado por la Agencia de Sustentabilidad y Cambio Climático, ASCC (creada en enero de 2017) elaboró un ‘borrador final’ acerca de dónde deberían estar los focos de esta entidad nacida producto del Acuerdo de París, el cual será presentado oficialmente el 15 de enero.</p>
+        </a>
+        <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">2018 sin bolsas: comenzó a regir acuerdo con supermercados</h4>
+        <p>Cabe recordar que fue Pucón la ciudad que debutó con esta regulación en 2013, seguida por comunas australes como Puerto Williams, Punta Arenas y Puerto Natales, las que prohibieron el uso de estos recipientes debido al pernicioso impacto medioambiental que generaban.</p>
+        </a>
+        <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">Hacia una economía saludable</h4>
+        <p>La crisis ecológica revela, ante todo, el callejón sin salida político, cultural, filosófico y espiritual en el que ha caído nuestra civilización. La guerra que libran nuestras sociedades ‘modernas’ contra la Tierra es el reflejo de la guerra que libran los países ricos contra su conciencia.</p>
+        </a>
+      </div>
+    </aside>
+  </div>
+</section>
+
         <!--sección actividades ambientales (manualidades con reciclaje)-->
-<section>
+<section id="seccionCuatro">
   <div class="container pull-left">
     <div class="col-md-4" >
       <div id="carousel-1" class="carousel slide" data-ride="carousel">
@@ -136,75 +210,6 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<header id="primerHeader">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-2 col-md-2 col-lg-2">
-      <!-- imagen -->
-      </div>
-      <div class="col-xs-4 col-md-4 col-lg-4">
-        <input type="text" name="correo" class="form-control" placeholder="buscador">
-      </div>
-    </div>
-  </div>
-</header>
-
-<section>
-  <div class="container-fluid pantalla2">
-    <div class="item">
-      <iframe width="350" height="150" src="https://www.youtube.com/embed/dZP6jZOnoI8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-      <div class="carousel-caption">
-        <h3>Manualidades con Tetrapack y Cartón</h3>
-      </div>
-    </div>
-    <div class="item">
-      <iframe width="350" height="150" src="https://www.youtube.com/embed/M5O6fyJoMY4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-      <div class="descripción">
-        <h3>Maneras Fácil de Reciclar tu Ropa Vieja</h3>
-      </div>
-    </div>
-    <div>
-      <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span></a>
-
-      <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Siguiente</span>
-      </a>
-    </div>
-  </div>
-</section>
-      <!--Contenido Ambiental-->
-<section>
-  <div>
-    <aside class="col-md-3 hidden-xs hidden-sm">
-      <h4>Categorias</h4>
-      <div class="list-group">
-        <a href="#" class="list-group-item active">Actividades Ambientales</a>
-        <a href="#" class="list-group-item">Feria Verde</a>
-        <a href="#" class="list-group-item">Manualidades con Matrial Reciclable</a>
-        <a href="#" class="list-group-item">Calcula Tú Huella de CO2</a>
-      </div>
-      <div>
-        <h4>Temas del Día</h4>
-        <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading">Agencia de Cambio Climático define líneas de acción para los próximos años</h4>
-        <p>Luego de siete meses de trabajo y varias reuniones, un Comité Asesor convocado por la Agencia de Sustentabilidad y Cambio Climático, ASCC (creada en enero de 2017) elaboró un ‘borrador final’ acerca de dónde deberían estar los focos de esta entidad nacida producto del Acuerdo de París, el cual será presentado oficialmente el 15 de enero.</p>
-        </a>
-        <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading">2018 sin bolsas: comenzó a regir acuerdo con supermercados</h4>
-        <p>Cabe recordar que fue Pucón la ciudad que debutó con esta regulación en 2013, seguida por comunas australes como Puerto Williams, Punta Arenas y Puerto Natales, las que prohibieron el uso de estos recipientes debido al pernicioso impacto medioambiental que generaban.</p>
-        </a>
-        <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading">Hacia una economía saludable</h4>
-        <p>La crisis ecológica revela, ante todo, el callejón sin salida político, cultural, filosófico y espiritual en el que ha caído nuestra civilización. La guerra que libran nuestras sociedades ‘modernas’ contra la Tierra es el reflejo de la guerra que libran los países ricos contra su conciencia.</p>
-        </a>
-      </div>
-    </aside>
   </div>
 </section>
 

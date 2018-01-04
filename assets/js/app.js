@@ -1,6 +1,15 @@
-document.getElementById('containerIcono').style.display='none';
-document.getElementById('formularioOculto').style.display='none';
-
+var icono = document.getElementById('containerIcono');
+icono.style.display='none';
+var formularioOculto = document.getElementById('formularioOculto');
+formularioOculto.style.display='none';
+var segundoHeader = document.getElementById('segundoHeader');
+segundoHeader.style.display='none';
+var seccionDos = document.getElementById('seccionDos');
+seccionDos.style.display='none';
+var seccionTres = document.getElementById('seccionTres');
+seccionTres.style.display='none';
+var seccionCuatro = document.getElementById('seccionCuatro');
+seccionCuatro.style.display='none';
 
 
 
@@ -20,7 +29,13 @@ registrar.addEventListener('click', function(){
   console.log(contrasena);
 })
 
-/*sección slider*/
+
+var iniciar = document.getElementById('iconoUno');
+iniciar.addEventListener('click', function(){
+  document.getElementById('containerIcono').style.display='block';
+  document.getElementById('formularioOculto').style.display='block';
+})
+
 
 
 

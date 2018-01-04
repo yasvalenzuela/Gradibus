@@ -5,10 +5,14 @@
   background-color: #8DC433;
   background-size: cover;
   height: 17vh;
-  width: auto;
-
 }
 
+.logo2 {
+  height: 15vh;
+  width: 30vh;
+  border-radius: 10%;
+  margin-top: 5px;
+  }
 
 /*lista del menú*/
 #primerHeader ul li {
@@ -16,31 +20,32 @@
   display: inline-flex;
 }
 
-@media (max-width: 740px){
-/*primer li de la lista*/
-#primerHeader ul li:first-child {
-  font-family: "Segoe UI",Arial,sans-serif;
-  margin-left: 70%;
-  margin-top: 4.5%;
-  font-size: 125%;
-}
-
 /*segundo li de la lista*/
 #segundoPunto {
   font-family: 'Montserrat', sans-serif;
   font-size: 155%;
+  margin-left: 50%;
+  margin-top: 8%;
+  margin-right: 1%;
+}
 
-.varios {
+#iconoUno {
+  margin-top: 4%;
+}
+
+/*.varios {
   font-family: 'Montserrat', sans-serif;;
   size: 110%;
   padding: 2em;
 }
+*/
 
 /*estilo de formulario desplegable oculto*/
 #containerIcono {
   margin-left: 85%;
   margin-top: 1%;
   font-size: 135%;
+  margin-right: 0%;
 }
 
 #formularioOculto {
@@ -73,18 +78,18 @@
 .fondo {
   background-image: url(../images/fondo.jpeg);
   background-size: cover;
-  height: 83vh;
-  width: auto;
+  height: 100vh;
+  /*width:auto;*/
   background-repeat: no-repeat;
 }
 
 /*estilo del div que contiene el formulario*/
 #formulario {
   background-color: #ffffff;
-  width: auto;
+  width: 58vh;
   border: 1px solid #A2CB89;
   border-radius: 4%;
-  margin-top: 19%;
+  margin-top: 22%;
   margin-left: 55%;
 }
 
@@ -100,10 +105,11 @@
   margin-left: 4%;
 }
 
+/*
 .cuadrado {
   margin-top: 5em;
 }
-
+*/
 /*estilos del boton crear cuenta*/
 .btn {
   margin-left: 75%;
@@ -111,14 +117,7 @@
   margin-bottom: 10%;
   margin-top: 1em;
   font-family: 'Montserrat', sans-serif;
-    }
-
-img .logo1 {
-  height: 14vh;
-  width: auto;
-  border-radius: 40%;
-  margin-top: 5px;
-  }
+}
 
   #buscador {
   border-radius: 5px;
@@ -151,3 +150,52 @@ img .logo1 {
 
 }
 
+#segundoHeader ul li {
+  list-style: none;
+  display: inline-flex;
+  margin-top: 1%;
+}
+
+#segundoHeader ul li:first-child {
+  margin-right: 45%;
+}
+
+#search{
+  width: 30%;
+}
+#lupa {
+  margin-left: -7%;
+  margin-top: 2%;
+  font-size: 115%;
+}
+
+#perfil {
+  margin-left: 3%;
+}
+
+#notificacion {
+  margin-left: 1.5%;
+}
+
+#seccionUno {
+  border: 1px solid red;
+  width: 30%;
+  height: 100vh;
+}
+
+#seccionDos {
+  border: 1px solid yellow;
+}
+
+#seccionTres {
+  border: 1px solid green;
+}
+
+@media (max-width: 740px){
+/*primer li de la lista*/
+  #primerHeader ul li:first-child {
+    font-family: "Segoe UI",Arial,sans-serif;
+    margin-left: 70%;
+    margin-top: 4.5%;
+    font-size: 125%;
+}
