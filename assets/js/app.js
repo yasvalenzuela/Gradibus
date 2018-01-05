@@ -37,7 +37,9 @@ sesion.addEventListener('click', function(){
 
 var registrar = document.getElementById('btn');
 registrar.addEventListener('click', function(){
-  /*console.log('diste un click');*/
+  /*
+  *console.log('diste un click');
+  */
   var correo = document.getElementById('email').value;
   var contrasena = document.getElementById('password').value;
 
@@ -54,18 +56,30 @@ registrar.addEventListener('click', function(){
 
 var boton = document.getElementById('boton');
 boton.addEventListener('click', function(){
-  //texto ingresado
+  /*
+  *texto ingresado
+  */
   var posteo = document.getElementById('post').value;
-  //limpiar el textarea
+  /*
+  *limpiar el textarea
+  */
   document.getElementById('post').value = '';
-  //contenedor que esta en el html
+  /*
+  *contenedor que esta en el html
+  */
   var cont = document.getElementById('cont');
-  //el div que contiene cada comentario
+  /*
+  *el div que contiene cada comentario
+  */
   var nuevoPost = document.createElement('div');
 
-  //creo un nodo tipo texto 
+  /*
+  *creo un nodo tipo texto
+  */
   var textoNuevoPost = document.createTextNode(posteo);
-  //creo un parrafo
+  /*
+  *creo un parrafo
+  */
   var elementoContenedor = document.createElement('p');
   elementoContenedor.appendChild(textoNuevoPost);
   nuevoPost.appendChild(elementoContenedor);
