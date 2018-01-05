@@ -10,7 +10,8 @@ iniciar.addEventListener('click', function(){
 });
 
 
-
+var segundoHeader=document.getElementById('segundoHeader');
+segundoHeader.style.display='none';
 var categoria = document.getElementById('categoria');
 categoria.style.display='none';
 var seccionTres = document.getElementById('seccionTres');
@@ -19,6 +20,12 @@ var seccionCuatro = document.getElementById('seccionCuatro');
 seccionCuatro.style.display='none';
 var seccionCinco =document.getElementById('seccionCinco');
 seccionCinco.style.display='none';
+var seccionSeis = document.getElementById('seccionSeis');
+seccionSeis.style.display='none';
+var seccionSiete = document.getElementById('seccionSiete');
+seccionSiete.style.display='none';
+var seccionOcho = document.getElementById('seccionOcho');
+seccionOcho.style.display='none';
 var sesion = document.getElementById('btnOculto');
 sesion.addEventListener('click', function(){
   document.getElementById('segundoHeader').style.display='inline-block';
@@ -46,21 +53,15 @@ registrar.addEventListener('click', function(){
 
 
 
-
-<<<<<<< HEAD
-
-
-
-
-
-=======
 /*sección Post*/
+/*
   $('.btn').click(function(){
         var post = $('#postea').value();
         $('#postea').value('');
       
       });
     
+/*
   $('#myCarousel').carousel({
       interval: 5000
           });
@@ -89,9 +90,9 @@ registrar.addEventListener('click', function(){
                   $('#carousel-text').html($('#slide-content-'+id).html());
           });
   });
->>>>>>> 43ce2a28dc4ace3d0f824ed39fd9f77cead0e776
 
 
+*/
 
 
 
