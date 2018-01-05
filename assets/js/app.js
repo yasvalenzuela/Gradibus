@@ -14,22 +14,23 @@ var segundoHeader=document.getElementById('segundoHeader');
 segundoHeader.style.display='none';
 var categoria = document.getElementById('categoria');
 categoria.style.display='none';
+var seccionUno = document.getElementById('seccionUno');
+seccionUno.style.display='none';
+var seccionDos =document.getElementById('seccionDos');
+seccionDos.style.display='none';
 var seccionTres = document.getElementById('seccionTres');
 seccionTres.style.display='none';
-var seccionCuatro = document.getElementById('seccionCuatro');
-seccionCuatro.style.display='none';
-var seccionCinco =document.getElementById('seccionCinco');
-seccionCinco.style.display='none';
-var seccionSeis = document.getElementById('seccionSeis');
-seccionSeis.style.display='none';
-var seccionSiete = document.getElementById('seccionSiete');
-seccionSiete.style.display='none';
-var seccionOcho = document.getElementById('seccionOcho');
-seccionOcho.style.display='none';
+
+
 var sesion = document.getElementById('btnOculto');
 sesion.addEventListener('click', function(){
+  document.getElementById('primerHeader').style.display='none';
+  document.getElementById('seccion').style.display='none';
   document.getElementById('segundoHeader').style.display='inline-block';
+  document.getElementById('seccionUno').style.display='block';
   document.getElementById('categoria').style.display='block';
+  document.getElementById('seccionDos').style.display='block';
+  document.getElementById('seccionTres').style.display='block';
   console.log('funciona');
 })
 
@@ -51,48 +52,29 @@ registrar.addEventListener('click', function(){
 });
 
 
+var boton = document.getElementById('boton');
+boton.addEventListener('click', function(){
+  //texto ingresado
+  var posteo = document.getElementById('post').value;
+  //limpiar el textarea
+  document.getElementById('post').value = '';
+  //contenedor que esta en el html
+  var cont = document.getElementById('cont');
+  //el div que contiene cada comentario
+  var nuevoPost = document.createElement('div');
+
+  //creo un nodo tipo texto 
+  var textoNuevoPost = document.createTextNode(posteo);
+  //creo un parrafo
+  var elementoContenedor = document.createElement('p');
+  elementoContenedor.appendChild(textoNuevoPost);
+  nuevoPost.appendChild(elementoContenedor);
+
+  cont.appendChild(nuevoPost);
+})
 
 
-/*sección Post*/
-/*
-  $('.btn').click(function(){
-        var post = $('#postea').value();
-        $('#postea').value('');
-      
-      });
-    
-/*
-  $('#myCarousel').carousel({
-      interval: 5000
-          });
-   
-          //Handles the carousel thumbnails
-          jQuery(document).ready(function($) {
-   
-          $('#myCarousel').carousel({
-                  interval: 5000
-          });
-   
-          //Handles the carousel thumbnails
-          $('[id^=carousel-selector-]').click(function () {
-          var id_selector = $(this).attr("id");
-          try {
-              var id = /-(\d+)$/.exec(id_selector)[1];
-              console.log(id_selector, id);
-              jQuery('#myCarousel').carousel(parseInt(id));
-          } catch (e) {
-              console.log('Regex failed!', e);
-          }
-      });
-          // When the carousel slides, auto update the text
-          $('#myCarousel').on('slid.bs.carousel', function (e) {
-                   var id = $('.item.active').data('slide-number');
-                  $('#carousel-text').html($('#slide-content-'+id).html());
-          });
-  });
 
-
-*/
 
 
 

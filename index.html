@@ -98,14 +98,9 @@
 <header id="segundoHeader">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-2 col-md-2 col-lg-2">
-      <!-- imagen -->
-      </div>
-      <div class="col-xs-4 col-md-4 col-lg-4">
-        <input type="text" name="correo" class="form-control" placeholder="buscador">
       <div class="col-md-12">
         <ul>
-          <li>logo</li>
+          <li><img src="assets/images/logo1.jpg" class="logo3"></li>
           <li id="search"><input type="text" class="form-control" placeholder="Search"><span id="lupa" class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
           <li id="perfil">perfil</li>
           <li id="notificacion" ><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></li>
@@ -115,98 +110,13 @@
   </div>
 </header>
 
-<!--  
-<section id='seccionDos'>
-  <div class="container-fluid pantalla2">
-    <div class="item">
-      <iframe width="350" height="150" src="https://www.youtube.com/embed/dZP6jZOnoI8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-      <div class="carousel-caption">
-        <h3>Manualidades con Tetrapack y Cartón</h3>
-      </div>
-    </div>
-    <div class="item">
-      <iframe width="350" height="150" src="https://www.youtube.com/embed/M5O6fyJoMY4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-      <div class="descripción">
-        <h3>Maneras Fácil de Reciclar tu Ropa Vieja</h3>
-      </div>
-    </div>
-    <div>
-      <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span></a>
-
-      <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Siguiente</span>
-      </a>
-    </div>
-  </div>
-</section>
-<<<<<<< HEAD
--->
-
-<!--sección actividades ambientales (manualidades con reciclaje)-->
-<section id="seccionTres">
-  <div class="container pull-left">
-    <div class="col-md-4" >
-      <div id="carousel-1" class="carousel slide" data-ride="carousel">
-        <!--indicadores-->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-1" data-slide-to="1"></li>
-            <li data-target="#carousel-1" data-slide-to="2"></li>
-            <li data-target="#carousel-1" data-slide-to="3"></li>
-            <li data-target="#carousel-1" data-slide-to="4"></li>
-          </ol>
-      </div>
-        <!--contenedor de los slider-->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <iframe width="350" height="150" src="https://www.youtube.com/embed/ATgCPFON78M" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-            <div class="carousel-caption">
-              <h3>Manualidades Botellas Pet</h3>
-            </div>
-        </div>
-        <div class="item">
-          <iframe width="350" height="150" src="https://www.youtube.com/embed/0SuOXNUc8cw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-            <div class="carousel-caption">
-              <h3>Manualidades con Papel</h3>
-            </div>
-        </div>
-        <div class="item">
-          <iframe width="350" height="150" src="https://www.youtube.com/embed/OzR8fbROb60" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-        </div>
-        <div class="carousel-caption">
-          <h3>Manualidades con Cajas de Leche</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="seccionCuatro">
-  <div class="container pull-left ">
-    <div class="col-md-4" >
-      <div id="carousel-1" class="carousel slide" data-ride="carousel">
-      <!--indicadores carrusel manualidades-->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-1" data-slide-to="1"></li>
-          <li data-target="#carousel-1" data-slide-to="2"></li>
-          <li data-target="#carousel-1" data-slide-to="3"></li>
-          <li data-target="#carousel-1" data-slide-to="4"></li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!--Contenido Ambiental-->
-<section id="seccionCinco">
+<section id="seccionUno">
   <div>
     <aside class="col-md-3 hidden-xs hidden-sm" id="categoria">
       <h4>Categorias</h4>
       <div class="list-group">
-        <a href="#" class="list-group-item active">Actividades Ambientales</a>
+        <a href="#" class="list-group-item">Actividades Ambientales</a>
         <a href="#" class="list-group-item">Feria Verde</a>
         <a href="manualidades.html" class="list-group-item">Manualidades con Matrial Reciclable</a>
         <a href="#" class="list-group-item">Calcula Tú Huella de CO2</a>
@@ -229,10 +139,31 @@
     </aside>
   </div>
 </section>
-<section id="seccionSeis">
+
+<!--input para los post-->
+<section id="seccionDos">
+  <div id="container_post">
+    <div class="row">
+      <div class="col-md-8 center">
+        <form id="custom-search-form" class="form-search form-horizontal pull-right">
+          <div class="input-append span12" id="contPost">
+            <textarea name="txt" id="post" cols="20" rows="1" placeholder="¿Qué está pasando?"></textarea>
+            <button type="button" class="btn" id="boton"><i class="icon-search"></i>Enviar</button>
+            <div id="cont"></div>
+          </div>
+        </form>
+      <div class="col-md-8 center">
+        <div id="listaPost"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="seccionTres">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-6 col-sm-6">
+      <div class="col-xs-6 col-sm-6" id="contactos">
         <div>
           <h3>Sugerencia de amigos</h3>
         </div>
@@ -246,14 +177,14 @@
         </div>
       </div>
     </div>
-      <div class="row">
+      <div class="row" id="contactosDos">
         <div>
           <h3>Amigos Conectados</h3>
         </div>
         <div class="col-xs-1 col-sm-1 col-lg-1" class="contactos">
           <img src="assets/images/contacto66.jpg" class="imagen"><p id="nomb">Florencia</p>
         </div>
-        <div class="col-xs-1 col-sm-1 col-lg-1" class="contacto">
+        <div class="col-xs-1 col-sm-1 col-lg-1" class="contacto" id="contact">
           <img src="assets/images/contacto77.jpg" class="imagen"><p id="nomb">Tremebunda</p> 
         </div>
       </div>
@@ -261,49 +192,12 @@
   </div>
 </section>
 
-<!--sección actividades ambientales (manualidades con reciclaje)-->
-<section id="seccionSiete">
-  <div class="container pull-left">
-    <div class="col-md-4" >
-      <div id="carousel-1" class="carousel slide" data-ride="carousel">
-        <!--indicadores-->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-1" data-slide-to="1"></li>
-            <li data-target="#carousel-1" data-slide-to="2"></li>
-            <li data-target="#carousel-1" data-slide-to="3"></li>
-            <li data-target="#carousel-1" data-slide-to="4"></li>
-          </ol>
-      </div>
-        <!--contenedor de los slider-->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <iframe width="350" height="150" src="https://www.youtube.com/embed/ATgCPFON78M" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-            <div class="carousel-caption">
-              <h3>Manualidades Botellas Pet</h3>
-            </div>
-        </div>
-        <div class="item">
-          <iframe width="350" height="150" src="https://www.youtube.com/embed/0SuOXNUc8cw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-            <div class="carousel-caption">
-              <h3>Manualidades con Papel</h3>
-            </div>
-        </div>
-        <div class="item">
-          <iframe width="350" height="150" src="https://www.youtube.com/embed/OzR8fbROb60" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-        </div>
-        <div class="carousel-caption">
-          <h3>Manualidades con Cajas de Leche</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!--
 <section id="seccionOcho">
   <div id="container_post">
     <div class="row">
       <div class="col-md-3">
-        <form id="custom-search-form" class="form-search form-horizontal pull-right">
+        <form id="custom-search-form seccionNueve" class="form-search form-horizontal pull-right">
             <div class="input-append span12">
               <input id ="postea" type="text" class="search-query mac-style " placeholder="Agrega un post">
               <button type="submit" class="btn"><i class="icon-search"></i></button>
@@ -315,7 +209,7 @@
     </div>
   </div>
 </section>
-
+  -->
 
 
 

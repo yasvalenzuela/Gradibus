@@ -135,14 +135,60 @@
 }
 
 /*segunda pantalla*/
+
+body {
+  background-color: #D9EF8B;
+}
 /*header*/
 #segundoHeader {
   position: fixed;
   background-color: #8DC433;
   background-size: cover;
-  height: 10vh;
+  height: 13vh;
   width: 100%;
   padding-bottom:50px;
+  z-index: 14;
+}
+
+#segundoHeader ul li {
+  list-style: none;
+  display: inline-flex;
+  margin-top: 0.5%;
+}
+
+#segundoHeader ul li:first-child {
+  margin-right: 35%;
+  margin-top: 1%;
+}
+
+.logo3 {
+  height: 7vh;
+  width: 20vh;
+  border-radius: 10%;
+  }
+
+#search{
+  width: 30%;
+}
+
+#lupa {
+  margin-left: -7%;
+  margin-top: 2%;
+  font-size: 115%;
+}
+
+#perfil {
+  margin-left: 3%;
+}
+
+#notificacion {
+  margin-left: 1.5%;
+  font-size: 115%;
+}
+
+/*contenido ambiental*/
+#categoria {
+  margin-top: 8%;
 }
 
 /*Actividades manualidades de reciclaje*/
@@ -152,6 +198,62 @@
   text-align:left;
 }
 
+/*posteos*/
+#post{
+  font-size: 155%;
+  width: 130%;
+  height: auto;
+  border: 1px solid #8DC433;
+  border-radius: 3%;
+  margin-top: 40%;
+  margin-left: -160%;
+  resize: none;
+}
+
+#boton {
+  margin-top: 35%;
+  margin-left: -25%;
+  margin-bottom: 10%;
+  border: 1px solid transparent;
+  border-radius: 10%;
+  background-color: #1A9850;
+  color: #ffffff;
+  font-size: 95%;
+  font-weight: 600;
+}
+
+/*contenedor de posteos*/
+#cont {
+  text-align: left;
+  width: 100%;
+  height: auto;
+  color: #535658;
+}
+#cont div {
+  width: 130%;
+  height: auto; 
+  margin-top: 10%;
+  margin-left: -160%;
+  margin-bottom: 10%;
+  outline: 1px solid #A2CB89;
+  background-color: #ffffff;
+}
+
+
+/*contactos*/
+#contactos {
+  margin-left: 69%;
+  margin-top: -70%;
+}
+
+#contactosDos {
+  margin-left: 70%;
+  margin-top: -40%;
+}
+
+#contact {
+  margin-left: 20%;
+}
 /* Imagen de los contactos*/ 
 .imagen {
   border-radius: 50%;
@@ -445,4 +547,4 @@
     width: 50%;
 }
 
->>>>>>> 43ce2a28dc4ace3d0f824ed39fd9f77cead0e776
+
